@@ -92,7 +92,7 @@ module.exports = (router) => {
     obj.long = req.query.long
     
        axios
-         .post("http://yftchain.local/club/academy/in/attendance/status", obj)
+         .post("https://test.yftchain.com/club/academy/in/attendance/status", obj)
          .then(function (response) {
            console.log("---------------------");
            console.log(response);

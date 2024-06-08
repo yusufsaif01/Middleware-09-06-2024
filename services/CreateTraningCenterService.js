@@ -42,7 +42,7 @@ class CreateTraningCenterService {
     try {
       axios
         .post(
-          `${config.app.redirect_domains}/registration/in/create_traning_center`,
+          `https://test.yftchain.com/registration/in/create_traning_center`,
           userData
         )
         .then(function (response) {

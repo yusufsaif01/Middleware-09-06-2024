@@ -63,7 +63,7 @@ class UserProfileService {
   async updateProfileDetails(requestedData = {}) {
     axios
       .put(
-        "http://yftchain.local/registration/in/update-details/:_category",
+        "https://test.yftchain.com/registration/in/update-details/:_category",
         requestedData
       )
       .then(function (response) {

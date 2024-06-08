@@ -342,7 +342,7 @@ class UserService extends BaseService {
 
       if (requestedData._category == "personal_details") {
         const axiosrcivedata = await axios.get(
-          `http://yftchain.local/registration/in/profile/:_category/${user.user_id}`
+          `https://test.yftchain.com/registration/in/profile/:_category/${user.user_id}`
         );
 
         return axiosrcivedata.data.data;
@@ -471,7 +471,7 @@ class UserService extends BaseService {
   async getPublicProfileDetails(user = {}) {
     try {
       const response = await axios.get(
-        `http://yftchain.local/registration/in/member/public/profile/${user.user_id}/${user.sent_by}`
+        `https://test.yftchain.com/registration/in/member/public/profile/${user.user_id}/${user.sent_by}`
       );
       if (!_.isEmpty(response)) {
         return Promise.resolve(response.data.data);

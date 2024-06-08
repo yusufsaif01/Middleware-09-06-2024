@@ -107,7 +107,7 @@ class UserRegistrationService extends UserService {
       if (userData.country_code == "+91") {
         console.log("india");
         axios
-          .post("http://yftchain.local/registration/in/register", userData)
+          .post("https://test.yftchain.com/registration/in/register", userData)
           .then(function (response) {
             console.log(response);
           })

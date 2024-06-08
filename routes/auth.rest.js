@@ -247,7 +247,7 @@ module.exports = (router) => {
       // obj.authUser = req.authUser;
       if (true) {
         axios
-          .post("http://yftchain.local/registration/in/create-password", obj)
+          .post("https://test.yftchain.com/registration/in/create-password", obj)
           .then(function (response) {
             console.log("---------------------");
             console.log(response);

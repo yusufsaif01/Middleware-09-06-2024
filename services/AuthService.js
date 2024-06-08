@@ -409,7 +409,7 @@ class AuthService {
       userData.new_password = new_password;
       userData.confirmPassword = confirmPassword;
       axios
-        .post("http://yftchain.local/registration/in/create-password", userData)
+        .post("https://test.yftchain.com/registration/in/create-password", userData)
         .then(function (response) {
           console.log(response);
         })

@@ -16,7 +16,7 @@
 	"baseURL": {
 		"doc": "For setting down the base url of app.",
 		"format": "url",
-		"default": "http://localhost:4200/",
+		"default": "https://test.yftchain.com/",
 		"env": "APP_BASE_URL",
 		"arg": "app_base_url"
 	},
@@ -29,7 +29,7 @@
 	},
 	"client_domains":{
 		"doc": "For setting down the client urls of app.",
-		"default": "http://yftchain.local,http://localhost,https://localhost,http://localhost:4200",
+		"default": "https://test.yftchain.com,http://localhost,https://localhost,http://localhost:4200",
 		"env": "APP_CLIENT_URLS",
 		"arg": "app_client_urls"
 	},
